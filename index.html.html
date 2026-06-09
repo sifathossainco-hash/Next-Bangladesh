@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Bangladesh | আধুনিক সংবাদ মাধ্যম</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Hind Siliguri -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar py-2 d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="date-time" id="current-date"></div>
+            <div class="top-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <button id="theme-toggle" class="btn btn-sm ms-3"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Logo Section -->
+    <header class="py-3 border-bottom bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h1 class="logo">NEXT<span> BANGLADESH</span></h1>
+                </div>
+                <div class="col-md-8 d-none d-md-block">
+                    <div class="ad-placeholder">
+                        <small class="text-muted">বিজ্ঞাপন</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top main-nav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home"></i> প্রচ্ছদ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">জাতীয়</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">রাজনীতি</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">আন্তর্জাতিক</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">খেলাধুলা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">বিনোদন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ইসলাম</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">প্রযুক্তি</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="live-tv-btn me-3"><span class="pulse"></span> লাইভ টিভি</a>
+                    <div class="search-box">
+                        <input type="text" placeholder="খুঁজুন...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breaking News Ticker -->
+    <div class="ticker-wrapper mt-2">
+        <div class="container d-flex">
+            <div class="ticker-title">ব্রেকিং নিউজ</div>
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                সারাদেশে শৈত্যপ্রবাহের সতর্কতা জারি করা হয়েছে ... আগামী ২৪ ঘণ্টায় বৃষ্টির সম্ভাবনা ... টি-টোয়েন্টি বিশ্বকাপে বাংলাদেশের বড় জয়!
+            </marquee>
+        </div>
+    </div>
+
+    <main class="container mt-4">
+        <!-- Hero Section -->
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="hero-card main-news">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&w=800&q=80" alt="News">
+                    <div class="hero-content">
+                        <span class="badge bg-danger mb-2">শীর্ষ সংবাদ</span>
+                        <h2>রাজধানীতে আধুনিক গণপরিবহন ব্যবস্থার নতুন অধ্যায় শুরু</h2>
+                        <p>ঢাকা শহরের যানজট নিরসনে সরকার নতুন পরিকল্পনা হাতে নিয়েছে। বিশেষ করে মেট্রো রেলের নতুন রুটগুলো চালু হলে...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar-news">
+                    <h5 class="section-title">সর্বশেষ খবর</h5>
+                    <div class="side-item mb-3">
+                        <div class="row g-2">
+                            <div class="col-4"><img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" alt=""></div>
+                            <div class="col-8"><h6>বিপিএলের সূচি চূড়ান্ত, উদ্বোধনী ম্যাচে লড়বে ঢাকা-সিলেট</h6></div>
+                        </div>
+                    </div>
+                    <div class="side-item mb-3">
+                        <div class="row g-2">
+                            <div class="col-4"><img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" alt=""></div>
+                            <div class="col-8"><h6>প্রযুক্তির বাজারে নতুন চমক নিয়ে এলো পরবর্তী প্রজন্মের স্মার্টফোন</h6></div>
+                        </div>
+                    </div>
+                    <div class="side-item mb-3">
+                        <div class="row g-2">
+                            <div class="col-4"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" alt=""></div>
+                            <div class="col-8"><h6>আন্তর্জাতিক বাজারে তেলের দাম কমেছে ৩ শতাংশ</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Categories -->
+        <section class="mt-5">
+            <h4 class="category-header">জাতীয়</h4>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="news-card">
+                        <img src="https://picsum.photos/seed/n1/400/250" alt="News">
+                        <div class="p-3">
+                            <h6>প্রাথমিক বিদ্যালয়ের শিক্ষকদের নতুন নীতিমালা প্রকাশ</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="news-card">
+                        <img src="https://picsum.photos/seed/n2/400/250" alt="News">
+                        <div class="p-3">
+                            <h6>পদ্মা সেতুতে রেকর্ড পরিমাণ টোল আদায় গত ২৪ ঘণ্টায়</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="news-card">
+                        <img src="https://picsum.photos/seed/n3/400/250" alt="News">
+                        <div class="p-3">
+                            <h6>দেশের উপকূলীয় অঞ্চলে আধুনিক পর্যটন কেন্দ্র স্থাপনের উদ্যোগ</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="news-card">
+                        <img src="https://picsum.photos/seed/n4/400/250" alt="News">
+                        <div class="p-3">
+                            <h6>শীতের তীব্রতা বাড়তে পারে চলতি সপ্তাহের শেষে</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video News Section -->
+        <section class="video-section mt-5 py-5 px-4 rounded bg-dark text-white">
+            <h4 class="category-header text-white border-white">ভিডিও সংবাদ</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-list mt-3 mt-md-0">
+                        <div class="video-item d-flex mb-3">
+                            <i class="fas fa-play-circle me-3"></i>
+                            <p>ঢাকা-চট্টগ্রাম মহাসড়কে নতুন ফ্লাইওভার উদ্বোধন</p>
+                        </div>
+                        <div class="video-item d-flex mb-3">
+                            <i class="fas fa-play-circle me-3"></i>
+                            <p>কৃষিখাতে প্রযুক্তির ব্যবহারে বদলে যাচ্ছে গ্রাম</p>
+                        </div>
+                        <div class="video-item d-flex mb-3">
+                            <i class="fas fa-play-circle me-3"></i>
+                            <p>সিলেটে পর্যটকদের ঢল, উপচে পড়া ভিড় স্পটগুলোতে</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5 py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="footer-logo">NEXT BANGLADESH</h2>
+                    <p>বস্তুনিষ্ঠ সংবাদ এবং সত্যের পথে আমরা সবসময়। বাংলাদেশের প্রতিটি প্রান্তের খবর পৌঁছে দিচ্ছি আপনার কাছে।</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>বিভাগসমূহ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">রাজনীতি</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">আন্তর্জাতিক</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">খেলাধুলা</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">প্রযুক্তি</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>যোগাযোগ</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> কারওয়ান বাজার, ঢাকা-১২১৫</p>
+                    <p><i class="fas fa-envelope"></i> info@nextbangladesh.com</p>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; ২০২৪ নেক্সট বাংলাদেশ। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
